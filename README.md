@@ -23,4 +23,4 @@ JavaScript, Python, CSS, HTML, React, Vue.js, Node.js, PHP, Java, C++, Go, Rust,
 Got a cool idea for a language or feature? Fork the repo, make your changes, and submit a pull request! We welcome contributions from all backgrounds.
 
 💬 Credits
-Created by [Your Name] with love for code and games. Special thanks to the open-source community and pixel artists who made this possible.
+Created by Sky with love for code and games. Special thanks to everyone playing
