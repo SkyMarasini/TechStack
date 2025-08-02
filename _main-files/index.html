@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStack</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">TechStack</div>
+            <div class="subtitle">lets see if you can collect all 12 techs 😉</div>
+        </div>
+        
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="tech-count">TechStack: <span id="techCount">0</span></div>
+        </div>
+        
+        <div class="game-board" id="gameBoard"></div>
+        
+        <div class="tech-stack-display">
+            <div class="stack-title">Current Tech Stack:</div>
+            <div class="stack-items" id="stackItems"></div>
+        </div>
+        
+        <div class="controls">
+           ** use <b>WASD</b> for controls **
+        </div>
+        
+        <div class="game-over" id="gameOver">
+            <h2>PLEASE VOTE ME</h2>
+            <p>THANKS for VOTING me</p>
+            <div class="final-stack" id="finalStack"></div>
+            <button class="restart-btn" onclick="restartGame()">restart</button>
+        </div>
+    </div>
+</body>
+<script src="project.js"></script>
+</html>
