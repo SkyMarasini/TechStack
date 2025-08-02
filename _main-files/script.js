@@ -9,21 +9,68 @@
         const CELL_SIZE = 20;
         
         const technologies = [
-            { name: '✨', color: '#f7df1e', fullName: 'JavaScript' },
-            { name: '🐍', color: '#3776ab', fullName: 'Python' },
-            { name: 'C', color: '#1572b6', fullName: 'C' },
-            { name: 'C#', color: '#e34f26', fullName: 'C#' },
-            { name: '⚛️', color: '#61dafb', fullName: 'React' },
-            { name: '🖼️', color: '#4fc08d', fullName: 'Vue' },
-            { name: '🌲', color: '#339933', fullName: 'Node' },
-            { name: '🐘', color: '#777bb4', fullName: 'PHP' },
-            { name: '☕', color: '#ed8b00', fullName: 'Java' },
-            { name: '💣', color: '#00599c', fullName: 'C++' },
-            { name: '🌀', color: '#00add8', fullName: 'GoLang' },
-            { name: '🦀', color: '#808080', fullName: 'Rust' },
-            { name: '📘', color: '#ffffffff', fullName: 'TypeScript' },
-            { name: '🕊️', color: '#00ff55ff', fullName: 'Swift' },
-            
+            { name: '✨', fullName: 'JavaScript' },
+            { name: '🐍', fullName: 'Python' },
+            { name: '☕', fullName: 'Java' },
+            { name: '💣', fullName: 'C++' },
+            { name: '🎻', fullName: 'C#' },
+            { name: '🔧', fullName: 'C' },
+            { name: '🌲', fullName: 'Node.js' },
+            { name: '📘', fullName: 'TypeScript' },
+            { name: '🌀', fullName: 'Go' },
+            { name: '🦀', fullName: 'Rust' },
+            { name: '🕊️', fullName: 'Swift' },
+            { name: '🎯', fullName: 'Kotlin' },
+            { name: '🐘', fullName: 'PHP' },
+            { name: '💎', fullName: 'Ruby' },
+            { name: '🧠', fullName: 'Haskell' },
+            { name: '🧬', fullName: 'Scala' },
+            { name: '🧪', fullName: 'Elixir' },
+            { name: '📐', fullName: 'Erlang' },
+            { name: '🖼️', fullName: 'Vue.js' },
+            { name: '⚛️', fullName: 'React' },
+            { name: '🗃️', fullName: 'SQL' },
+            { name: '🖥️', fullName: 'Bash' },
+            { name: '🐚', fullName: 'Shell' },
+            { name: '📊', fullName: 'R' },
+            { name: '📈', fullName: 'MATLAB' },
+            { name: '🧮', fullName: 'Fortran' },
+            { name: '🏛️', fullName: 'COBOL' },
+            { name: '🧾', fullName: 'VBA' },
+            { name: '🧩', fullName: 'Assembly' },
+            { name: '🧊', fullName: 'Dart' },
+            { name: '🧠', fullName: 'Prolog' },
+            { name: '🧵', fullName: 'Lisp' },
+            { name: '🧺', fullName: 'Scheme' },
+            { name: '🧚', fullName: 'F#' },
+            { name: '🧃', fullName: 'OCaml' },
+            { name: '🧞', fullName: 'Clojure' },
+            { name: '🧙', fullName: 'Ada' },
+            { name: '🧛', fullName: 'Pascal' },
+            { name: '🧟', fullName: 'Delphi' },
+            { name: '🤯', fullName: 'Brainfuck' },
+            { name: '🧼', fullName: 'Whitespace' },
+            { name: '🎭', fullName: 'Shakespeare' },
+            { name: '🧑‍🎨', fullName: 'Piet' },
+            { name: '🧱', fullName: 'Blockly' },
+            { name: '🎮', fullName: 'GDScript' },
+            { name: '🕹️', fullName: 'Lua' },
+            { name: '🧞‍♂️', fullName: 'AngelScript' },
+            { name: '🧑‍🚀', fullName: 'UnrealScript' },
+            { name: '📦', fullName: 'Hack' },
+            { name: '🪙', fullName: 'Solidity' },
+            { name: '🚀', fullName: 'Move' },
+            { name: '🧠', fullName: 'Julia' },
+            { name: '🧊', fullName: 'Crystal' },
+            { name: '🐴', fullName: 'Pony' },
+            { name: '🧞‍♀️', fullName: 'Bosque' },
+            { name: '🧃', fullName: 'V' },
+            { name: '🧑‍🔬', fullName: 'PureScript' },
+            { name: '🧑‍💻', fullName: 'ReScript' },
+            { name: '🧑‍🏫', fullName: 'QBasic' },
+            { name: '🧑‍🔧', fullName: 'DIBOL' },
+            { name: '🧑‍🚒', fullName: 'RPG' },
+            { name: '🧑‍🌾', fullName: 'C--' }
         ];
         
         let collectedTechs = new Set();
@@ -155,7 +202,7 @@
                     score += 10;
                     uniqueTechStack.push(currentTech);
                 } else {
-                    score += 5; // Less points for duplicate techs
+                    score += 1; // Less points for duplicate techs
                 }
                
                 techStack.push(currentTech);
@@ -221,4 +268,4 @@
         updateDisplay();
         
         // Game loop
-        setInterval(moveSnake, 100);
+        setInterval(moveSnake, 150);
