@@ -154,11 +154,11 @@
                 gameBoard.appendChild(foodElement);
             }
             
-            // Update UI
+            // update in UI
             scoreElement.textContent = score;
             techCountElement.textContent = uniqueTechStack.length;
             
-            // Update tech stack display
+            // update in tech stack display
             stackItemsElement.innerHTML = '';
             uniqueTechStack.forEach(tech => {
                 const item = document.createElement('span');
@@ -238,7 +238,7 @@
             updateDisplay();
         }
         
-        // Keyboard controls
+        // controls
         document.addEventListener('keydown', (e) => {
             if (!gameRunning) return;
             
@@ -262,9 +262,9 @@
             }
         });
         
-        // Initialize game
+        // initialize game
         createFood();
         updateDisplay();
         
-        // Game loop
+        // speed of the snake
         setInterval(moveSnake, 150);
